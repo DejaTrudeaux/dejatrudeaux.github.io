@@ -9,7 +9,7 @@
  */
  var myStr = "hello";
  var aStr = "WORLD";
- console.log(myStr + " " + aStr); // prints => hello WORLD
+ console.log(myStr + " " + aStr); // prints => 'hello WORLD'
   
 // NOTE: You can access characters in a string using their indices. For example:
  console.log(myStr[1]); // returns => "e", the second letter in the string
@@ -19,14 +19,14 @@
  * replacing parts of a string, to eliminating characters. Here are some examples:
  */ 
 // .toUpperCase() and .toLowerCase() are used to change the case of a string
- console.log(myStr.toUpperCase()); // prints => HELLO
- console.log(aStr.toLowerCase()); // prints => world
+ console.log(myStr.toUpperCase()); // prints => 'HELLO'
+ console.log(aStr.toLowerCase()); // prints => 'world'
    
 /** .slice() can be used to manipulate only certain letters in a string.
  * The first number points to the index of the letter we want to slice from the 
  * string, and the second letter is the index we want to stop BEFORE.
  */
- console.log(aStr.slice(1, 3)); // prints => "or"
+ console.log(aStr.slice(1, 3)); // prints => "OR"
  console.log(myStr.slice(0, 1).toUpperCase() + myStr.slice(1)); // prints => "Hello"
    
 // .replace() is used for replacing parts of a string 

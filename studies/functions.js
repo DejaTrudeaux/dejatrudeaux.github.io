@@ -8,16 +8,16 @@
  
  // TWO PARTS OF A FUNCTION: //
  // Designing a function //
- /** This means creating a function that we can use by using the function keyword.
-  * Then we name the function something useful to describe what it does (using 
+ /** We can create a reusable function by using the function keyword. We must
+  * name the function something useful to describe what it does (using 
   * camelCase) and add parameters in parentheses. We want our parameters to be
   * as vague as possible, because we are going to be plugging values to replace
   * our parameters when we call the function later. Next, we want to add curly brackets.
   * Inside the curly brackets block, we are going to make code for what we want this
   * function to do! This is the syntax for a named function:
   */ 
-function addNum(a, b){
-    console.log(a * b); // our function will multiply its two parameters, a and b
+function multNum(a, b){
+    console.log(a + b); // our function will multiply its two parameters, a and b
  }
  
  // Calling a function //
@@ -26,14 +26,14 @@ function addNum(a, b){
   * addNum, and in the parentheses we plug in numbers, which we now call arguments.
   * Executing, invoking, applying, and running are all names for calling a function.
   */
-addNum(2, 3); // prints => 6, because 2 * 3 is 6 and our function multiplies
+multNum(2, 3); // prints => 6, because 2 * 3 is 6 and our function multiplies
  
  // Functions assigned to variables //
  /** When we want to assign our functions to variables, we do so by declaring a
   * variable with out function name, and then assigning the function to the 
   * variable. So if we want to do so for our above function:
   */
-var addSum = function(a, b){
+var multSum = function(a, b){
      console.log(a * b);
   };
   
@@ -56,10 +56,10 @@ function num1(){
   x = 1;
  return function num2(){
     x = 2;
-  }
+  };
 }
-
-console.log(x); // prints => undefined because x is not defined outside of the function
+console.log(x); // prints => undefined because x is not assigned outside of the function
+// and we haven't called the function yet
 
 var myFunc = num1();
 myFunc();
@@ -81,7 +81,6 @@ function aFunc(){
       return (a + b + c);
     };
 } 
-
 var z = aFunc();
 console.log(z()); // prints => "Octopii rule a lot"
 // The bFunc function has access to its own variables and the variables in its parent

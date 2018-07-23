@@ -53,7 +53,7 @@
  
  // 7. Null //
  /** NOTE: This is a value used by a programmer to represent the absense of value. Null
-  * would not ever be printed in the console, it is a tool for a programmer.
+  * is not a result of anything, it is a tool for a programmer.
   */
   var x = 7;
   if (x === null){

@@ -12,13 +12,13 @@
 // 0. assignment operators //
 /** Assignment operators are used to assign values to variables.
  */ 
- // = assigns the value on the left to the variable on the right
+ // '=' assigns the value on the right to the variable on the left
  var a = "fizz";
  var b = "buzz";
  var c = 1;
  var d = 2;
   
-// += or the addition assignment adds values or concatenates strings
+// '+=' or the addition assignment adds values or concatenates strings
  console.log(a += b); // prints => "fizzbuzz"
  console.log(c += d); // prints => 3;
 
@@ -58,7 +58,7 @@ console.log(9 <= 9); // prints => true because 9 is equal to 9
  * cause bugs!
  */
  console.log(2 === '2'); // prints false because the number 2 !== the string, '2'
- console.log(2 == '2'); // prints true because this operator is less strict
+ console.log(2 == '2'); // prints true because this operator ignores type
  
  
 // 3. logical operators //
@@ -98,7 +98,6 @@ console.log(typeof "hello"); // prints => string
  * So, the first is a condition, and the last two are expressions: the first being
  * a value if the condition is true, the second is if the value is false
  */
- 
 var myName = "Deja";
 console.log(myName === "Deja"? "yes" : "no"); // prints => "yes"
 // Here, myName is the condition, and that variable is "Deja". Therefore, in this 

@@ -17,9 +17,9 @@
  */
 var count = 0;
 while (count < 12){
-    console.log(count + " " + "is not a dozen!");
+    console.log(count + " " + "does not make a dozen!");
     count++;
-} // prints => "0" through "11" and concatenates " is not a dozen!" to each one
+} // prints => "0" through "11" and concatenates " does not make a dozen!" to each one
 // the above loop only runs when the condition, count < 12 is true
 
 
