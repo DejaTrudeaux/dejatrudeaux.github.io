@@ -93,3 +93,13 @@ console.log(typeof "hello"); // prints => string
 
 
 // 5. ternary operators //
+/** Ternary operators are frequently used in place of if statements to take 3 aspects
+ * and returns which of the second and third is true of the first condition.
+ * So, the first is a condition, and the last two are expressions: the first being
+ * a value if the condition is true, the second is if the value is false
+ */
+ 
+var myName = "Deja";
+console.log(myName === "Deja"? "yes" : "no"); // prints => "yes"
+// Here, myName is the condition, and that variable is "Deja". Therefore, in this 
+// example, the first condition is true.
