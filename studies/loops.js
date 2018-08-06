@@ -35,6 +35,14 @@ while (count < 12){
      console.log(myArray[i]); // prints => 1 then prints 2 then prints 3 ... to 5
  }
  
+var myStr = "Hey peeps";
+var newArr = [];
+ for (var x = 0; x < myStr.length; x++){
+  newArr.push(myStr[x].toUpperCase());
+ }
+console.log(newArr.join('')); // prints => "HEY PEEPS" because each letter is made
+// uppercase
+ 
  /** to loop backwards through an array, start at the last value using .length - 1,
   * use the the zero index as the stop condition when i is greater than or equal
   * to zero, and iterate backwards using i--.

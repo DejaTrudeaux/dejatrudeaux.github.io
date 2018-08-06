@@ -28,10 +28,11 @@ function multNum(a, b){
   */
 multNum(2, 3); // prints => 6, because 2 * 3 is 6 and our function multiplies
  
- // Functions assigned to variables //
+ // Functions Expressions //
  /** When we want to assign our functions to variables, we do so by declaring a
   * variable with out function name, and then assigning the function to the 
-  * variable. So if we want to do so for our above function:
+  * variable. This is called a function expression. So if we want to do so for 
+  * our above function:
   */
 var multSum = function(a, b){
      console.log(a * b);

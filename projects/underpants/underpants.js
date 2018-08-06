@@ -119,7 +119,7 @@ _.last = (array, number) => {
     //return just the first element in array
         return array[array.length-1];
     }    
-    //otherwise, return the first <number> items of <array>
+    //otherwise, return the last <number> items of <array>
     else {
         return array.slice(-number);
     }
@@ -360,7 +360,7 @@ _.contains = (array, value) => {
 *   1) A collection
 *   2) A function
 * Objectives:
-*   1) Call <function> for every element of <collection> with the paramaters:
+*   1) Call <function> for every element of <collection> with the parameters:
 *      if <collection> is an array:
 *          current element, it's index, <collection>
 *      if <collection> is an object:
@@ -432,12 +432,7 @@ _.some = (collection, action) => {
         return false;
       }
     });
-   if (_.contains(newArr, true)){
-     return true;
-   }
-   else {
-     return false;
-   }
+   return (_.contains(newArr, true) ? true : false);
 };
 
 

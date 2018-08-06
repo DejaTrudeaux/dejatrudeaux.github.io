@@ -39,6 +39,9 @@ else if (feeling === "afraid"){
 else {
     console.log("I'm happy, feeling glad!"); // prints => "I'm happy, feeling glad!"
 }
+// NOTE: We don't always have to use else-if. If our conditions are mutually exclusive,
+// we should use else-if. If they are not, we can just use if statements. Using only if
+// instead of else-if makes it possible for more than one if statement to be executed.
 
 // switch statements //
 /** NOTE: Switch statements can be used in place of if-statements to control the flow

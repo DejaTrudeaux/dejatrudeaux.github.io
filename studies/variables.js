@@ -74,7 +74,7 @@ console.log(myArr); // prints => undefined
 
 let aString = "hello";
 aString = "hi";
-console.log(aString); // prints => "hi" because the let has been reassigned
+console.log(aString); // prints => "hi" because the variable aString has been reassigned
 
 // 5. block scope of a let variable //
 /**NOTE Because y is not defined in the global scope, the console.log function
@@ -119,12 +119,20 @@ if (myAge === 8){
     console.log(myAge);
 } // prints => 8 because the loop can access the const myAge in the global scope
 
-/** NOTE In fact, you must establish a constant before you try to return it, log it to
+/** NOTE: In fact, you must establish a constant before you try to return it, log it to
  * the console, or do anything to it, or else you will receive an error because const 
  * variables are not hoisted to the top of their scope!
  * Example:
  * if (yourAge === 24){
     const yourAge = 24;
-    console.log(yourAge); this would receive an error message
+    console.log(yourAge); this would receive an error message, not only because of hoisting
+    but also because if it was hoisted, only the declaration would be hoisted and not the 
+    assignment anyway, so it would be undefined. You also can't re-assign a const variable 
+    or declare it without assignment.
     }
  */
+ 
+ /** Also, complex const variables are mutable, so if we have an array of values assigned to
+  * a const variable, we can manipulate the array (.push, .pop, .shift, .unshift, etc.).
+  */ 
+ 

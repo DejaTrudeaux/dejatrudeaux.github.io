@@ -101,7 +101,6 @@ function maybeNoises(object){
         newArr = 'there are no noises';
       return newArr;
      }
-  
    }
 
 //////////////////////////////////////////////////////////////////////

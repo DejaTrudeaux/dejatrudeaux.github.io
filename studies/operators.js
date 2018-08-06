@@ -6,7 +6,8 @@
  * 2. Comparison Operators
  * 3. Logical Operators
  * 4. Unary Operators
- * 5. Ternary Operators
+ * 5. Conditional (Ternary) Operators
+ * 6. String Operators
  */
  
 // 0. assignment operators //
@@ -95,10 +96,21 @@ console.log(typeof "hello"); // prints => string
 // 5. ternary operators //
 /** Ternary operators are frequently used in place of if statements to take 3 aspects
  * and returns which of the second and third is true of the first condition.
- * So, the first is a condition, and the last two are expressions: the first being
- * a value if the condition is true, the second is if the value is false
+ * So, the first is a condition followed by a question mark, and the last two are 
+ * expressions: the first being a the return value if the condition is true, followed 
+ * by a colon and the second is the expression returned if the condition is false
  */
 var myName = "Deja";
 console.log(myName === "Deja"? "yes" : "no"); // prints => "yes"
-// Here, myName is the condition, and that variable is "Deja". Therefore, in this 
-// example, the first condition is true.
+// Here, myName is strictly equal to 'Deja' is the condition. Since a variable myName 
+// has been created and assigned the name 'Deja', the condition is true. Therefore, in 
+// this example, the first expression will be printed.
+var myName = "Deja";
+console.log(myName === "Ashton"? "yes" : "no"); // prints ="no"
+
+// 6. string operators //
+/** the concatenation operator + adds strings together to make a new string.
+ */
+ var firstName = "Ginny";
+ var lastName = "Weasley";
+ var fullName = firstName + ' ' + lastName;
